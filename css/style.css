@@ -405,8 +405,6 @@ body {
 .slider {
 	padding: 75px 0;
 	background: #151519;
-	display: flex;
-	gap: 90px;
 }
 
 .slider__wrapper {
@@ -414,8 +412,19 @@ body {
 	margin: 50px auto;
 }
 
+.slide__img-wrapper{
+	text-align: center;
+		max-width: 1440px;
+	margin: 0 auto;
+}
+
 .slide {
 	position: relative;
+	margin: 0 95px;
+}
+
+.slide-wrapper{
+	margin: 0 -90px;
 }
 
 .slick-arrow {
@@ -462,13 +471,10 @@ body {
 	background-color: #fff;
 }
 
-.slide__img-wrapper {
-	position: relative;
-}
+
 
 .slide__img {
 	height: 560px;
-	width: 100%;
 }
 
 .slide-title {
