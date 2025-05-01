@@ -494,12 +494,42 @@ body {
 }
 
 .play__button {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 100;
-	top: 40%;
-	padding: 34px 35px 30px 35px;
-	border-radius: 50%;
-	border: 2.5px solid #004b8b;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  padding: 34px 35px 30px 35px;
+  border-radius: 50%;
+  border: 2.5px solid white; /* біла обводка знизу */
+  z-index: 10;
+  overflow: visible;
+  background-color: transparent; /* або прозорий */
 }
+
+.play__button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+  height: 105%;
+  border-radius: 50%;
+  z-index: 1;
+  background: conic-gradient(#004b8b 0deg, transparent 0deg);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 6px), black calc(100% - 6px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 4.1px), black calc(100% - 4.1px));
+  animation: loadBorder 5s linear forwards;
+}
+
+@keyframes loadBorder {
+  from {
+    background: conic-gradient(#004b8b 0deg, transparent 0deg);
+  }
+  to {
+    background: conic-gradient(#004b8b 360deg, transparent 0deg);
+  }
+}
+
+
+
