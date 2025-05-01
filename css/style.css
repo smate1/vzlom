@@ -543,6 +543,7 @@ body {
 	background-image: url('../images/production-bg.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center top;
 }
 
 .production__top {
