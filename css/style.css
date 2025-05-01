@@ -300,8 +300,31 @@ body {
 }
 .catalog__item {
 	max-width: 711px;
+	height: 711px;
 	flex: 1;
 	border-radius: 10px;
+	transition: all .3s;
+}
+.catalog__item{
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+.catalog__item:hover{
+	background: #000;
+}
+
+.catalog__item:hover .catalog__item-title,
+.catalog__item:hover .catalog__item-price{
+	color: #fff;
+}
+
+.catalog__item:hover .catalog__item-arrow{
+	background: #fff;
+}
+
+.catalog__item:hover .path-black{
+	fill: #000;
 }
 
 .catalog__item-black {
@@ -337,12 +360,10 @@ body {
 	color: #fff;
 }
 
-.catalog__item-arrow--black {
+.catalog__item-arrow {
 	background-color: #000;
 }
-.catalog__item-arrow--white {
-	background-color: #fff;
-}
+
 
 .catalog__arrow-wrapper {
 	margin: 0 auto;
@@ -456,7 +477,8 @@ body {
 .slick-dots > li #slick-slide-control01,
 .slick-dots > li #slick-slide-control02,
 .slick-dots > li #slick-slide-control03,
-.slick-dots > li #slick-slide-control04 {
+.slick-dots > li #slick-slide-control04,
+.slick-dots > li #slick-slide-control05 {
 	font-size: 0;
 	height: 8px;
 	background-color: transparent;
