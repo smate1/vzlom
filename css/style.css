@@ -610,3 +610,124 @@ body {
 	font-weight: 400;
 	line-height: 24px; /* 141.176% */
 }
+
+.footer {
+	padding: 100px 0 45px;
+	background: #151519;
+	color: #fff;
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 90px;
+	position: relative;
+}
+
+.footer__inner::after {
+	position: absolute;
+	content: '';
+	background-image: url('../images/footer__decor.svg');
+	background-repeat: no-repeat;
+	bottom: 0;
+	height: 37px;
+	width: 100%;
+}
+
+.footer__info-text {
+	color: rgba(255, 255, 255, 0.69);
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 22px; /* 146.667% */
+	margin: 20px 0 13px;
+}
+.footer__achieve {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-left: -20px;
+	margin-bottom: 13px;
+}
+
+.footer__achieve-dun {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px; /* 257.143% */
+	text-transform: uppercase;
+}
+
+.footer__policy {
+	color: rgba(255, 255, 255, 0.69);
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px; /* 157.143% */
+}
+
+.footer__nav-title {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 36px; /* 240% */
+	text-transform: uppercase;
+}
+
+.footer__nav-link {
+	color: rgba(255, 255, 255, 0.69);
+	display: block;
+	margin-top: 5px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px; /* 240% */
+}
+.footer__contacts {
+	width: 210px;
+}
+.footer__contacts-info {
+	margin-top: 20px;
+	display: flex;
+	align-items: start;
+	gap: 15px;
+}
+
+.footer__contacts-link {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 30px; /* 200% */
+	margin-top: -10px;
+}
+
+.footer__contacts-info img {
+}
+
+.footer__contacts-info + .footer__contacts-info {
+	margin-top: 20px;
+}
+
+.footer__socials {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 14px;
+	column-gap: 13px;
+	margin-bottom: 48px;
+}
+
+.footer__partners {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+	margin-top: 48px;
+}
+
+.footer__copy {
+	color: rgba(255, 255, 255, 0.4);
+	text-align: center;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 55px; /* 458.333% */
+	text-transform: uppercase;
+	margin-top: 21px;
+}
