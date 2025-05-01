@@ -471,8 +471,6 @@ body {
 	background-color: #fff;
 }
 
-
-
 .slide__img {
 	height: 560px;
 }
@@ -518,7 +516,7 @@ body {
   z-index: 1;
   background: conic-gradient(#004b8b 0deg, transparent 0deg);
   -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 6px), black calc(100% - 6px));
-  mask: radial-gradient(farthest-side, transparent calc(100% - 4.1px), black calc(100% - 4.1px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 4.6px), black calc(100% - 4.6px));
   animation: loadBorder 5s linear forwards;
 }
 
@@ -531,5 +529,24 @@ body {
   }
 }
 
+.production {
+	background: #151519;
+	padding: 90px 0;
+	background-image: url('../images/production-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+.production__top {
+	margin-bottom: 36px;
+}
+.production__subtitle {
+	color: rgba(255, 255, 255, 0.50);
+}
+
+.production__inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	row-gap: 18px;
+}
 
