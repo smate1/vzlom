@@ -18,11 +18,18 @@
   <header class="header__safes header">
     <div class="container">
       <nav class="header__nav">
-        <select class="header__select">
-          <option class="header__select-option">UA</option>
-          <option class="header__select-option">EN</option>
-          <option class="header__select-option">RU</option>
-        </select>
+        <div class="custom-select" id="custom-select">
+          <div class="custom-select__trigger">
+            <span>UA</span>
+            <div class="arrow"></div>
+          </div>
+          <div class="custom-options">
+            <span class="custom-option selected" data-value="UA">UA</span>
+            <span class="custom-option" data-value="EN">EN</span>
+            <span class="custom-option" data-value="RU">RU</span>
+          </div>
+        </div>
+
         <ul class="menu">
           <li class="menu__list">
             <a class="menu__list-link" href="#">про нас</a>
@@ -242,17 +249,6 @@
               <img class="slide__img" loading="lazy" src="./images/slider-1.png" alt="Двері 3" />
             </div>
             <div class="slide-title">Поради щодо безпеки</div>
-            <button class="play__button">
-              <img class="play__button-img" loading="lazy" src="./images/play.svg" alt="">
-            </button>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="slide-wrapper">
-            <div class="slide__img-wrapper">
-              <img class="slide__img" loading="lazy" src="./images/slider-1.png" alt="Двері 2" />
-            </div>
-            <div class="slide-title">Обираємо матеріал для дверей</div>
             <button class="play__button">
               <img class="play__button-img" loading="lazy" src="./images/play.svg" alt="">
             </button>
@@ -485,11 +481,17 @@
               <img loading="lazy" src="./images/telegram.svg" alt="">
             </a>
           </div>
-          <select class="header__select">
-            <option class="header__select-option">UA</option>
-            <option class="header__select-option">EN</option>
-            <option class="header__select-option">RU</option>
-          </select>
+          <div class="custom-select" id="custom-select-footer">
+            <div class="custom-select__trigger">
+              <span>UA</span>
+              <div class="arrow"></div>
+            </div>
+            <div class="custom-options">
+              <span class="custom-option selected" data-value="UA">UA</span>
+              <span class="custom-option" data-value="EN">EN</span>
+              <span class="custom-option" data-value="RU">RU</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer__partners">
